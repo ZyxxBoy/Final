@@ -6,12 +6,12 @@ from datetime import datetime, timedelta
 
 app = Flask(__name__)
 app.secret_key = 'your_secret_key_here'  # Ganti dengan secret key yang lebih aman
-
 # Konfigurasi koneksi MySQL
 db_config = {
-    'user': 'root',         # Ganti dengan nama pengguna MySQL Anda
-    'password': '',         # Ganti dengan password MySQL Anda
-    'host': 'localhost',    # Ganti dengan host server MySQL Anda
+    'user': 'rentalps',         # Ganti dengan nama pengguna MySQL Anda
+    'password': 'Admin123',         # Ganti dengan password MySQL Anda
+    'host': 'rentalps.mysql.database.azure.com',
+    'port': 3306,
     'database': 'rentalps'  # Ganti dengan nama database MySQL Anda
 }
 
